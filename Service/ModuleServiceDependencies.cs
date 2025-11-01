@@ -1,8 +1,8 @@
 using Service.AuthService.Services;
-using Service.Services;
-using Ecommerce.DataAccess.Services.OAuth;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Service.OAuthService.Services.Contract;
+using Service.OAuthService.Services;
 
 namespace Service;
 

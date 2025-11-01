@@ -1,6 +1,7 @@
 using Core.Features.ShippingAddresses.Queries.Models;
 using Core.Features.ShippingAddresses.Queries.Responses;
 
+
 namespace Core.Features.ShippingAddresses.Queries.Handlers
 {
     public class ShippingAddressQueryHandler : ApiResponseHandler,

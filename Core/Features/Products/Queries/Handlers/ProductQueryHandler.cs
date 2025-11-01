@@ -1,6 +1,7 @@
 using Core.Features.Products.Queries.Models;
 using Core.Features.Products.Queries.Responses;
 
+
 namespace Core.Features.Products.Queries.Handlers
 {
     public class ProductQueryHandler : ApiResponseHandler,

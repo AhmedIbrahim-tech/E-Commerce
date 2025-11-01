@@ -6,8 +6,6 @@ global using Domain.Helpers;
 global using Domain.Requests;
 global using Domain.Responses;
 global using Infrastructure.Data;
-global using Infrastructure.Repositories.Contract;
-global using Service.Services.Contract;
 global using Service.AuthService.Services.Contract;
 global using Microsoft.AspNetCore.Identity;
 global using Microsoft.AspNetCore.Http;
@@ -29,4 +27,9 @@ global using X.Paymob.CashIn;
 global using X.Paymob.CashIn.Models.Orders;
 global using X.Paymob.CashIn.Models.Payment;
 global using System.Text.Json;
+global using Service.ServicesHandlers.Interfaces;
+global using Infrastructure.RepositoriesHandlers.Interfaces;
+global using Microsoft.Extensions.Caching.Memory;
+global using Service.ServicesHandlers.Services;
+
 

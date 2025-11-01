@@ -1,4 +1,5 @@
 using Core.Features.ApplicationUser.Commands.Models;
+using Service.ServicesHandlers.Interfaces;
 
 namespace Core.Features.ApplicationUser.Commands.Handlers
 {

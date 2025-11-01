@@ -1,9 +1,7 @@
+namespace Service.OAuthService.Services.Contract;
 
-namespace Ecommerce.DataAccess.Services.OAuth
+public interface IAuthGoogleService
 {
-    public interface IAuthGoogleService
-    {
-        Task<(JwtAuthResponse, string)> AuthenticateWithGoogleAsync(string idToken);
-        Task<GoogleJsonWebSignature.Payload> ValidateGoogleTokenAsync(string idToken);
-    }
+    Task<(JwtAuthResponse, string)> AuthenticateWithGoogleAsync(string idToken);
+    Task<GoogleJsonWebSignature.Payload> ValidateGoogleTokenAsync(string idToken);
 }

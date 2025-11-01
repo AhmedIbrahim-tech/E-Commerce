@@ -8,7 +8,6 @@ global using Domain.Enums.Sorting;
 global using Domain.Helpers;
 global using Domain.Responses;
 global using Service.AuthService.Services.Contract;
-global using Service.Services.Contract;
 global using AutoMapper;
 global using MediatR;
 global using Microsoft.AspNetCore.Identity;
@@ -18,4 +17,8 @@ global using System.Linq.Expressions;
 global using System.Net;
 global using System.Security.Claims;
 global using FluentValidation;
+global using Service.OAuthService.Services.Contract;
+global using Service.ServicesHandlers.Interfaces;
+
+
 

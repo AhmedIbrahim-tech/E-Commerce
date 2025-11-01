@@ -1,5 +1,6 @@
 using Core.Features.Categories.Commands.Models;
 
+
 namespace Core.Features.Categories.Commands.Validators
 {
     public class EditCategoryValidator : AbstractValidator<EditCategoryCommand>

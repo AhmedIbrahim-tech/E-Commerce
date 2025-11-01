@@ -1,10 +1,12 @@
 using Core.Features.Categories.Commands.Models;
 
+
 namespace Core.Features.Categories.Commands.Validators
 {
     public class AddCategoryValidator : AbstractValidator<AddCategoryCommand>
     {
-        private readonly ICategoryService _categoryService;        public AddCategoryValidator(ICategoryService categoryService)
+        private readonly ICategoryService _categoryService;        
+        public AddCategoryValidator(ICategoryService categoryService)
         {
             _categoryService = categoryService;            ApplyValidationRoles();
             ApplyCustomValidationRoles();

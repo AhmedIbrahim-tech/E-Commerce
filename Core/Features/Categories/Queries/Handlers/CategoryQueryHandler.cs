@@ -1,6 +1,7 @@
 using Core.Features.Categories.Queries.Models;
 using Core.Features.Categories.Queries.Response;
 
+
 namespace Core.Features.Categories.Queries.Handlers
 {
     public class CategoryQueryHandler : ApiResponseHandler

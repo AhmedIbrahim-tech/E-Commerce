@@ -1,5 +1,6 @@
 using Core.Features.Reviews.Queries.Models;
 
+
 namespace Core.Features.Reviews.Queries.Validators
 {
     public class GetReviewPaginatedListValidator : AbstractValidator<GetReviewPaginatedListQuery>

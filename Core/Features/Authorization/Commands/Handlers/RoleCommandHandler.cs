@@ -1,4 +1,5 @@
 using Core.Features.Authorization.Commands.Models;
+using Service.ServicesHandlers.Interfaces;
 
 namespace Core.Features.Authorization.Commands.Handlers
 {

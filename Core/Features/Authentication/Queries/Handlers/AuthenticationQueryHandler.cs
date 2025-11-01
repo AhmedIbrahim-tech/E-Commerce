@@ -1,4 +1,5 @@
 using Core.Features.Authentication.Queries.Models;
+using Service.ServicesHandlers.Interfaces;
 
 namespace Core.Features.Authentication.Queries.Handlers
 {

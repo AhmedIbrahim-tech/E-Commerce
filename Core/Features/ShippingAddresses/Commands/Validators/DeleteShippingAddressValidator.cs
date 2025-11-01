@@ -1,5 +1,6 @@
 using Core.Features.ShippingAddresses.Commands.Models;
 
+
 namespace Core.Features.ShippingAddresses.Commands.Validators
 {
     internal class DeleteShippingAddressValidator : AbstractValidator<DeleteShippingAddressCommand>

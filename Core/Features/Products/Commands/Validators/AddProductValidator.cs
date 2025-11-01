@@ -1,5 +1,6 @@
 using Core.Features.Products.Commands.Models;
 
+
 namespace Core.Features.Products.Commands.Validators
 {
     public class AddProductValidator : AbstractValidator<AddProductCommand>

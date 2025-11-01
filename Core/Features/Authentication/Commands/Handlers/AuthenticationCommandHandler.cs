@@ -1,5 +1,5 @@
 using Core.Features.Authentication.Commands.Models;
-using Ecommerce.DataAccess.Services.OAuth;
+using Service.ServicesHandlers.Interfaces;
 
 namespace Core.Features.Authentication.Commands.Handlers
 {

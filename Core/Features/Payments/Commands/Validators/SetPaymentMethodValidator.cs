@@ -1,5 +1,6 @@
 using Core.Features.Payments.Commands.Models;
 
+
 namespace Core.Features.Payments.Commands.Validators
 {
     public class SetPaymentMethodValidator : AbstractValidator<SetPaymentMethodCommand>

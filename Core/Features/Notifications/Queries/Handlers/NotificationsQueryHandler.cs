@@ -1,6 +1,7 @@
 using Core.Features.Notifications.Queries.Models;
 using Core.Features.Notifications.Queries.Responses;
 
+
 namespace Core.Features.Notifications.Queries.Handlers
 {
     public class NotificationsQueryHandler : ApiResponseHandler,

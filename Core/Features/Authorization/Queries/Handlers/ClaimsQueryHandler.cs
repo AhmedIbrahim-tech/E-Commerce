@@ -1,4 +1,6 @@
 using Core.Features.Authorization.Queries.Models;
+using Service.ServicesHandlers.Interfaces;
+
 
 namespace Core.Features.Authorization.Queries.Handlers
 {

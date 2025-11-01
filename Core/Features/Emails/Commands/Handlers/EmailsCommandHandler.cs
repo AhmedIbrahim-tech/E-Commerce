@@ -1,5 +1,6 @@
 using Core.Features.Emails.Commands.Models;
 
+
 namespace Core.Features.Emails.Commands.Handlers
 {
     public class EmailsCommandHandler : ApiResponseHandler,

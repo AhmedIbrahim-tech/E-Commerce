@@ -20,7 +20,7 @@ namespace Infrastructure.Seeder
                     EmailConfirmed = true,
                     PhoneNumberConfirmed = true
                 };
-                await userManager.CreateAsync(defualtAdmin, "Ah7_med$#@!");
+                await userManager.CreateAsync(defualtAdmin, "Ah7_med@123");
                 await userManager.AddToRoleAsync(defualtAdmin, "Admin");
             }
         }
