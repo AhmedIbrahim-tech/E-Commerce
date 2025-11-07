@@ -1,17 +1,11 @@
-using Core.Features.Categories.Queries.Response;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Core.Features.Categories.Queries.GetCategoryList;
 
-namespace Core.Mapping.Categories
+namespace Core.Mapping.Categories;
+
+public partial class CategoryProfile
 {
-    public partial class CategoryProfile
+    public void GetCategoryListMapping()
     {
-        public void GetCategoryListMapping()
-        {
-            CreateMap<Category, GetCategoryListResponse>();
-        }
+        CreateMap<Category, GetCategoryListQuery>();
     }
 }

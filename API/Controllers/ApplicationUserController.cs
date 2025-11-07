@@ -1,23 +1,23 @@
-using Core.Features.ApplicationUser.Commands.Models;
+using Core.Features.ApplicationUser.Commands.AddCustomer;
+using Core.Features.ApplicationUser.Commands.ChangeUserPassword;
 
-namespace API.Controllers
+namespace API.Controllers;
+
+[Authorize]
+public class ApplicationUserController : AppControllerBase
 {
-    [Authorize]
-    public class ApplicationUserController : AppControllerBase
+    [AllowAnonymous]
+    [HttpPost(Router.UserRouting.Register)]
+    public async Task<IActionResult> Register([FromBody] AddCustomerCommand command)
     {
-        [AllowAnonymous]
-        [HttpPost(Router.UserRouting.Register)]
-        public async Task<IActionResult> Register([FromBody] AddCustomerCommand command)
-        {
-            var response = await Mediator.Send(command);
-            return NewResult(response);
-        }
+        var response = await Mediator.Send(command);
+        return NewResult(response);
+    }
 
-        [HttpPut(Router.UserRouting.ChangePassword)]
-        public async Task<IActionResult> ChangePasword([FromBody] ChangeUserPasswordCommand command)
-        {
-            var response = await Mediator.Send(command);
-            return NewResult(response);
-        }
+    [HttpPut(Router.UserRouting.ChangePassword)]
+    public async Task<IActionResult> ChangePasword([FromBody] ChangeUserPasswordCommand command)
+    {
+        var response = await Mediator.Send(command);
+        return NewResult(response);
     }
 }

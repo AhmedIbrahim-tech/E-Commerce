@@ -1,5 +1,7 @@
-using Core.Features.Customers.Commands.Models;
-using Core.Features.Customers.Queries.Models;
+using Core.Features.Customers.Commands.EditCustomer;
+using Core.Features.Customers.Commands.DeleteCustomer;
+using Core.Features.Customers.Queries.GetCustomerById;
+using Core.Features.Customers.Queries.GetCustomerPaginatedList;
 
 namespace API.Controllers
 {

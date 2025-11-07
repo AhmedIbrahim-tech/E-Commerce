@@ -1,5 +1,9 @@
-using Core.Features.Orders.Commands.Models;
-using Core.Features.Orders.Queries.Models;
+using Core.Features.Orders.Commands.AddOrder;
+using Core.Features.Orders.Commands.PlaceOrder;
+using Core.Features.Orders.Commands.DeleteOrder;
+using Core.Features.Orders.Queries.GetOrderById;
+using Core.Features.Orders.Queries.GetMyOrders;
+using Core.Features.Orders.Queries.GetOrderPaginatedList;
 
 namespace API.Controllers
 {
@@ -16,9 +20,9 @@ namespace API.Controllers
 
         [Authorize(Roles = "Admin,Employee")]
         [HttpGet(Router.OrderRouting.GetById)]
-        public async Task<IActionResult> GetOrderById([FromRoute] Guid id)
+        public async Task<IActionResult> GetOrderById([FromRoute] Guid id, [FromQuery] int orderPageNumber = 1, [FromQuery] int orderPageSize = 10)
         {
-            var response = await Mediator.Send(new GetOrderByIdQuery(id));
+            var response = await Mediator.Send(new GetOrderByIdQuery(id) { OrderPageNumber = orderPageNumber, OrderPageSize = orderPageSize });
             return NewResult(response);
         }
 

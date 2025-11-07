@@ -1,4 +1,5 @@
-using Core.Features.Deliveries.Commands.Models;
+using Core.Features.Deliveries.Commands.SetDeliveryMethod;
+using Core.Features.Deliveries.Commands.EditDeliveryMethod;
 
 namespace API.Controllers
 {

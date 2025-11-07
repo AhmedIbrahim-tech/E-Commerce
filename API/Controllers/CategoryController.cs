@@ -1,5 +1,9 @@
-using Core.Features.Categories.Commands.Models;
-using Core.Features.Categories.Queries.Models;
+using Core.Features.Categories.Commands.AddCategory;
+using Core.Features.Categories.Commands.EditCategory;
+using Core.Features.Categories.Commands.DeleteCategory;
+using Core.Features.Categories.Queries.GetCategoryList;
+using Core.Features.Categories.Queries.GetCategoryById;
+using Core.Features.Categories.Queries.GetCategoryPaginatedList;
 
 namespace API.Controllers
 {

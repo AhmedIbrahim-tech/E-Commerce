@@ -1,4 +1,4 @@
-using Core.Features.Emails.Commands.Models;
+using Core.Features.Emails.Commands.SendEmail;
 
 namespace API.Controllers
 {

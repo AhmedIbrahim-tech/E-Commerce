@@ -1,5 +1,11 @@
-using Core.Features.Authentication.Commands.Models;
-using Core.Features.Authentication.Queries.Models;
+using Core.Features.Authentication.SignIn;
+using Core.Features.Authentication.GoogleLogin;
+using Core.Features.Authentication.RefreshToken;
+using Core.Features.Authentication.SendResetPassword;
+using Core.Features.Authentication.ResetPassword;
+using Core.Features.Authentication.AuthorizeUser;
+using Core.Features.Authentication.ConfirmEmail;
+using Core.Features.Authentication.ConfirmResetPassword;
 
 namespace API.Controllers
 {

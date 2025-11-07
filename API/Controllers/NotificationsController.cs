@@ -1,5 +1,6 @@
-using Core.Features.Notifications.Commands.Models;
-using Core.Features.Notifications.Queries.Models;
+using Core.Features.Notifications.Commands.EditSingleNotificationToAsRead;
+using Core.Features.Notifications.Commands.EditAllNotificationsToAsRead;
+using Core.Features.Notifications.Queries.GetNotificationPaginatedList;
 
 namespace API.Controllers
 {

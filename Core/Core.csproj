@@ -7,11 +7,6 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Remove="Features\Authentication\Commands\Responses\**" />
-    <EmbeddedResource Remove="Features\Authentication\Commands\Responses\**" />
-    <None Remove="Features\Authentication\Commands\Responses\**" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
@@ -27,12 +22,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\ApplicationUser\Queries\Handlers\" />
     <Folder Include="Features\Deliveries\Queries\" />
     <Folder Include="Features\Emails\Queries\" />
-    <Folder Include="Mapping\Orders\Commands\" />
-    <Folder Include="Mapping\Reviews\Queries\" />
-    <Folder Include="Mapping\Roles\Commands\" />
   </ItemGroup>
 
 </Project>

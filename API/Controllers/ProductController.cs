@@ -1,5 +1,8 @@
-using Core.Features.Products.Commands.Models;
-using Core.Features.Products.Queries.Models;
+using Core.Features.Products.Commands.AddProduct;
+using Core.Features.Products.Commands.EditProduct;
+using Core.Features.Products.Commands.DeleteProduct;
+using Core.Features.Products.Queries.GetProductById;
+using Core.Features.Products.Queries.GetProductPaginatedList;
 using Microsoft.Extensions.Caching.Memory;
 
 namespace API.Controllers;
